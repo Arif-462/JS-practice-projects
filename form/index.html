@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navLink">
+            <ul>
+                <li> Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            <ul>
+
+                <li onclick="openForm()" ><a href="#"></a>Login</li>
+                
+                <li onclick="openForm()">Register</li>
+                <li>Logout</li>
+            </ul>
+        </div>
+        <div class="formData">
+            <span onclick="closeForm()">&times;</span>
+            <form action="">
+                
+                <h1>Register</h1>
+
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="">
+        <div class="box">
+            <h2>headline</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+
+        </div>
+    </div>
+
+
+    <script src="index.js">    </script>
+
+
+</body>
+</html>

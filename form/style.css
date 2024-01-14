@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+
+.navLink{
+   display: flex;
+   justify-content: space-between;
+  
+}
+
+.navLink ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.navLink ul li{
+    background: transparent;
+    border: 1px solid red;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.navLink ul li:hover{
+    background: red;
+    border: 1px solid rgb(11, 136, 74);
+    color: #fff;
+    cursor: pointer;
+}
+
+.formData{
+    width: 20rem;
+    position: absolute;
+    left: 50%;
+    top: -140%;
+    background: #ddd;
+    transform: translate(-50%, -40%) scale(0.25);
+    padding: 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    transition: 1s; 
+    visibility: hidden;
+}
+
+.formData:hover{    
+    box-shadow: 0 5px 5px 0.4px; 
+    width: 25rem;  
+    transition: 1s; 
+}
+
+.formData span{
+    margin-top: 0;
+    margin-right: 0;
+    font-size: 2rem;
+    background: red;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+
+.formData h1{
+   text-align: center;
+   margin-bottom: 2rem;
+
+}
+.formData label{
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.formData input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+
+.formData button{
+    width: 100%;
+    border: 0;
+    outline: none;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+.formData button:hover{
+    background: rgb(7, 210, 47);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* js code */
+.popup{     
+    visibility: visible;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    transform: rotate3d(50deg to 20deg);
+}
+/* js code end */
+
+
+.box{
+    background: rgb(5, 5, 75);
+    max-width: 20rem;
+    margin: 0 auto;
+    height: 15rem;
+    text-align: center;
+    padding-top: 2rem;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+
+.box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.5s;
+    color: #fff;
+    opacity: 70%;    
+
+}
