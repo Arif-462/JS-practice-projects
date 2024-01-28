@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <table>
+                <tr >
+                    <td colspan="4"><input  type="text" id="result"></td>
+                </tr>
+                <tr >
+                    <td><input type="button" value="C" onclick="deleteMe()"></td>
+                    <td><input type="button" value="(" onclick="claculate('(')"></td>
+                    <td><input type="button" value=")" onclick="claculate(')')"></td>
+                    <td><input type="button" value="/" onclick="claculate('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="claculate('7')"></td>
+                    <td><input type="button" value="8" onclick="claculate('8')"></td>
+                    <td><input type="button" value="9" onclick="claculate('9')"></td>
+                    <td><input type="button" value="*" onclick="claculate('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="claculate('4')"></td>
+                    <td><input type="button" value="5" onclick="claculate('5')"></td>
+                    <td><input type="button" value="6" onclick="claculate('6')"></td>
+                    <td><input type="button" value="-" onclick="claculate('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="claculate('1')"></td>
+                    <td><input type="button" value="2" onclick="claculate('2')"></td>
+                    <td><input type="button" value="3" onclick="claculate('3')"></td>
+                    <td><input type="button" value="+" onclick="claculate('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="claculate('0')"></td>
+                    <td><input type="button" value="." onclick="claculate('.')"></td>
+                    <td><input type="button" value="%" onclick="claculate('%')"></td>
+                    <td><input type="button" value="=" onclick="ans()"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <script src="index.js"></script>    
+</body>
+</html>
